@@ -29,12 +29,6 @@ export default function Biodata() {
       <div className="container mx-auto py-10">
         <DataTable columns={columns} data={data} />
       </div>
-
-      <div className="flex justify-center h-screen bg-accent">
-        <div>We are coding at Biodata</div>
-        {/* Add Code Below */}
-        Winson aynandito Julio is here Joachim is here WHAT THE FUCK
-      </div>
     </>
   );
 }

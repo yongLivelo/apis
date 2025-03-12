@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import Home from "@/pages/Home/Home";
 import Biodata from "@/pages/Biodata/Biodata";
-import Documents from "@/pages/Documents/Documents";
 import Layout from "@/layouts/Layout";
+import References from "@/pages/References/References";
+import Settings from "@/pages/Settings/Settings";
 
 function App() {
   return (
@@ -10,10 +10,10 @@ function App() {
       <Layout>
         <BrowserRouter>
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/references" element={<References />} />
             <Route path="/biodata" element={<Biodata />} />
-            <Route path="/documents" element={<Documents />} />
-            <Route index element={<Home />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route index element={<References />} />
           </Routes>
         </BrowserRouter>
       </Layout>
